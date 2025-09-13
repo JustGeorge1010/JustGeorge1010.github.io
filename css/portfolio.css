@@ -22,7 +22,7 @@ body {
 }
 
 .btn-primary {
-  color: #ffe4dc;
+  color: #ffffff;
   background-color: #FF5722;
   border-color: #ea4c1d;
 }
@@ -218,6 +218,14 @@ i.skill-icon {
 
 footer {
   padding: 100px 0;
+}
+
+.contact-icon a {
+  color: #FF5722;
+}
+
+.contact-icon:hover {
+  text-shadow: 0 0 1px #FF5722, 0 0 3px #FF5722;
 }
 
 .top-scroll {
