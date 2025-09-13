@@ -142,19 +142,26 @@ body {
   padding: 50px 0;
 }
 
-/* Services */
+.photo {
+  width: 364px;
+  border: #ea4c1d;
+  border-style: outset;
+  border-width: 5px;
+}
 
-.services {
+/* Skills */
+
+.skills {
   background: #FF5722;
   padding: 50px 0;
   color: #ffffff;
 }
 
-.service-item {
+.skill-item {
   margin-bottom: 15px;
 }
 
-i.service-icon {
+i.skill-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
@@ -205,12 +212,6 @@ i.service-icon {
 
 .call-to-action .btn {
   margin: 10px;
-}
-
-/* Map */
-
-.map {
-  height: 500px;
 }
 
 /* Footer */
