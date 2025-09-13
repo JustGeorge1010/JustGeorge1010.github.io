@@ -4,7 +4,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-  color: #FFD700;
+  color: #FF5722;
+  background-color: #1e1e1e;
 }
 
 .vert-text {
@@ -20,13 +21,29 @@ body {
   font-weight: 700;
 }
 
+.btn-primary {
+  color: #ffffff;
+  background-color: #FF5722;
+  border-color: #ea4c1d;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #2b2929;
+  background-color: #ffe7e0;
+  border-color: #ea4c1d;
+}
+
 /* Side Menu */
 
 #sidebar-wrapper {
   margin-right: -250px;
   right: 0;
   width: 250px;
-  background: #000;
+  background: #1e1e1e;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -125,19 +142,26 @@ body {
   padding: 50px 0;
 }
 
-/* Services */
+.photo {
+  width: 364px;
+  border: #ea4c1d;
+  border-style: outset;
+  border-width: 5px;
+}
 
-.services {
-  background: #7fbbda;
+/* Skills */
+
+.skills {
+  background: #FF5722;
   padding: 50px 0;
   color: #ffffff;
 }
 
-.service-item {
+.skill-item {
   margin-bottom: 15px;
 }
 
-i.service-icon {
+i.skill-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
@@ -182,7 +206,7 @@ i.service-icon {
 
 .call-to-action {
   color: #ffffff;
-  background: #0a5175;
+  background: #333333;
   padding: 50px 0;
 }
 
@@ -190,16 +214,18 @@ i.service-icon {
   margin: 10px;
 }
 
-/* Map */
-
-.map {
-  height: 500px;
-}
-
 /* Footer */
 
 footer {
   padding: 100px 0;
+}
+
+.contact-icon a {
+  color: #FF5722;
+}
+
+.contact-icon:hover {
+  text-shadow: 0 0 1px #FF5722, 0 0 3px #FF5722;
 }
 
 .top-scroll {
