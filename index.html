@@ -139,12 +139,56 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-4 col-md-offset-2 text-center">
                     <div class="portfolio-item">
-                        <a href="https://justgeorge1010.itch.io/time-heist">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-1-timeheist.jpg">
+                        <a href="javascript:void(0)" onclick="ShowModal('timeHeistModal');">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-1-phonelinecincinnati.jpg">
+                        </a>
+                        <h4>Phoneline Cincinnati 2</h4>
+
+                        <div id="timeHeistModal" class="modal">
+                            <div class="modal-box">
+                                <span class="close">&times;</span>
+                                <video src="Phoneline_Cincinnati_2.mp4" class="portfolio-image" width="320" height="210" 
+                                    controls poster="img/portfolio-1-phonelinecincinnati.jpg"></video>
+                                <h2>Phoneline Cincinnati 2</h2>
+                                <p class="portfolio-text">
+                                    At first I'd made Phoneline Cincinnati, a long lost game that was basically just a
+                                    recreation of Hotline Miami made in java using the swing library. This was my attempt
+                                    at making a 3D version of the game. It's made in Java using the libGDX framework. A lot
+                                    of the code for rendering the models was written by hand by me. This also implements a
+                                    A* pathfinding algorithm that I wrote myself. The aim of this project
+                                    was to get a deeper understanding of how games can be made without using engines like
+                                    unity or godot as a crutch, and I believe my projects since, that have used these 
+                                    engines, benefit due to my knowledge of the how process that is usually hidden away. 
+                                </p>
+                                <a href="https://github.com/JustGeorge1010/PhoneLine-Cincinnati-2" class="btn btn-primary btn-lg">Check the github repo out here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="portfolio-item">
+                        <a href="javascript:void(0)" onclick="ShowModal('timeHeistModal');">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-2-timeheist.jpg">
                         </a>
                         <h4>Time Heist</h4>
+
+                        <div id="timeHeistModal" class="modal">
+                            <div class="modal-box">
+                                <span class="close">&times;</span>
+                                <img class="portfolio-image" src="img/portfolio-1-timeheist.jpg">
+                                <h2>Time Heist</h2>
+                                <p class="portfolio-text">
+                                    This was a game I made for Brackey's Game Jam 2020.2. It was made in unity using C#
+                                    and featured a time travel mechanic that would have the player solve various time 
+                                    travel related puzzles to break into a secret lab. It also had some cool enemy AI
+                                    and interesting visuals using ray traced red lighting from each enemy to show their 
+                                    cone of vision.
+                                </p>
+                                <a href="https://justgeorge1010.itch.io/time-heist" class="btn btn-primary btn-lg">Check the game out here</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,6 +214,7 @@
             -->
         </div>
     </div>
+
     <!-- /Portfolio -->
 
     <!-- Call to Action -->
@@ -230,6 +275,26 @@
     <script src="https://kit.fontawesome.com/37fc8687fb.js" crossorigin="anonymous"></script>
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+
+    <script>
+        var modal;
+        var span = document.getElementsByClassName("close")[0];
+
+        function ShowModal(modalName) {
+            modal = document.getElementById(modalName);
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
     <script>
